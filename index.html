@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube API</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>
-    
+<body class="bg-dark ms-5 me-5 mb-5 mt-5">
+    <h3 class="text-center text-white" id="obtenerCanal"></h3>
+
+
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade modal-xl"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 90%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Video</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <div class="row">
+            <div class="col-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-1c5ooPpnqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-6">
+                <h3 class="text-center">Untitled-1</h3>
+                <p>
+                    http://www.powtoon.com/youtube/ -- Create animated videos and animated presentations for free.  PowToon is a free tool that allows you to develop cool animated clips and animated presentations for your website, office meeting, sales pitch, nonprofit fundraiser, product launch, video resume, or anything else you could use an animated explainer video. PowToon's animation templates help you create animated presentations and animated explainer videos from scratch.  Anyone can produce awesome animations quickly with PowToon, without the cost or hassle other professional animation services require.
+                </p>
+            </div>
+           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>   
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row row-cols-1 row-cols-md-6 g-2" id="videos"></div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/scriptIndex.js"></script>
 </body>
 </html>
